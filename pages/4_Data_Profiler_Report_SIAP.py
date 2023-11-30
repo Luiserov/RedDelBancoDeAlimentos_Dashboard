@@ -12,13 +12,12 @@ import streamlit as st
 from streamlit_ydata_profiling import st_profile_report
 
 df = pd.read_parquet('/Users/luiser/Desktop/MCD/Ing Caract/Proyecto_Ing_Caract-main 3/RedDelBancoDeAlimentos_Dashboard-Luiser-EDA/data/SIAP.parquet')
-pr = ProfileReport(df, minimal=True, orange_mode=True, explorative=True)
+pr = ProfileReport
 
 st_profile_report(pr, navbar=True)
 
 
 # In[ ]:
-
 
 
 
